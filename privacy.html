@@ -19,13 +19,16 @@ The developer of CutCut does not receive, collect or store any of your data.</p>
 <h2>Data CutCut accesses</h2>
 <p>When you connect a <b>TikTok</b> account, CutCut receives from TikTok:</p>
 <ul>
-  <li>your basic profile: open ID, display name, username and avatar;</li>
+  <li>your basic profile: open ID, display name and avatar;</li>
   <li>the list of your videos: title, description, creation time, link, and view, like, comment and share counts.</li>
 </ul>
 <p>When you connect a <b>YouTube</b> channel, CutCut receives from Google:</p>
 <ul>
   <li>the channel ID, title, handle and avatar;</li>
   <li>view, like and comment counts of videos you published from CutCut.</li>
+  <li>The scopes CutCut requests are <code>youtube.upload</code> (upload videos to your channel and set their
+      thumbnails) and <code>youtube.readonly</code> (read your channel and the statistics of those videos).
+      CutCut uses no other YouTube API Services data.</li>
 </ul>
 <p>CutCut also receives access tokens that allow it to act on your behalf within the permissions you granted.</p>
 
