@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide — CutCut</title>
+<meta name="description" content="How to install CutCut, turn a Twitch stream into shorts and publish them to TikTok and YouTube.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav>
+  <a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28">CutCut</a>
+  <a href="./#features">Features</a><a href="./#tiktok">TikTok</a><a href="guide.html">Guide</a><a href="./#download">Download</a>
+</nav>
+
+<h1>Guide</h1>
+<p class="lead">From a stream recording to a published short. The interface is in Russian: button names are given in
+  English with the Russian label in brackets.</p>
+
+<ol class="toc">
+  <li><a href="#install">Install</a></li>
+  <li><a href="#project">Start a project</a></li>
+  <li><a href="#moments">Review the moments</a></li>
+  <li><a href="#edit">Edit a short</a></li>
+  <li><a href="#export">Preview and export</a></li>
+  <li><a href="#connect">Connect TikTok and YouTube</a></li>
+  <li><a href="#publish">Publish</a></li>
+  <li><a href="#stats">Statistics</a></li>
+  <li><a href="#disconnect">Disconnect an account</a></li>
+</ol>
+
+<h2 id="install">1. Install</h2>
+<p>Download the installer from the <a href="./#download">Download</a> section and run it. It installs CutCut without
+  administrator rights (only the Visual C++ Runtime asks for permission if it is missing), then sets up Python, ffmpeg,
+  the local model runtime and the models in a console window. If the download is interrupted, run
+  <b>CutCut — проверить и докачать</b> (check and download) from the Start menu: it downloads only what is missing.</p>
+<p>Choose an installation folder on a drive with plenty of space: projects with streams are kept next to the app.</p>
+
+<h2 id="project">2. Start a project</h2>
+<p>On the <b>Projects</b> (Проекты) screen, paste a link to a Twitch recording or channel and press <b>Start</b> (Начать),
+  or drop an mp4, ts or mkv file onto the window. A recording downloads in parts, and each part is analyzed as soon as it
+  arrives. A channel link records the live stream.</p>
+<p>The status bar shows the progress and how long the analysis has left. When it finishes, the project opens by itself.</p>
+
+<h2 id="moments">3. Review the moments</h2>
+<p>The list on the left shows the moments CutCut found, with a score from 1 to 10, the length and the topic. The strip at
+  the top is a map of the whole stream: chat activity, loudness and where the moments are.</p>
+<ul>
+  <li>Tick the moments you want as shorts. <b>Mark from</b> (Отмечать от) ticks every moment above a score.</li>
+  <li>Star your favourites; sort by <b>Time</b> (Время) or <b>Score</b> (Оценка); search by title and hashtag.</li>
+  <li>Drag a moment onto its neighbour to merge them, or add your own with <b>Add moment</b> (Добавить момент).</li>
+</ul>
+
+<figure class="shot">
+  <img src="img/editor.webp" alt="CutCut editor" width="1440" height="900" loading="lazy">
+</figure>
+
+<h2 id="edit">4. Edit a short</h2>
+<p>The middle of the screen shows the short exactly as it will look on a phone; the timeline below shows the short's time.</p>
+<ul>
+  <li><b>Frame</b> (Кадр): pick a layout — webcam on top, webcam in the corner, game only and others.
+    <b>Find webcam and game</b> (Найти вебку и игру) detects them on screen.</li>
+  <li><b>Subtitles</b>: choose a style and position; select a line to fix its words.</li>
+  <li><b>Timeline</b>: split with the blade, drag the edges to trim, change the speed of a piece,
+    <b>Remove pauses</b> (Убрать паузы) cuts the silence.</li>
+  <li><b>Add</b> (Добавить): text, an image, a video, a piece of the stream or music. Music gets quieter under speech by itself.</li>
+</ul>
+
+<h2 id="export">5. Preview and export</h2>
+<p><b>Preview</b> (Предпросмотр) renders the short in full quality in a phone frame. <b>Export</b> (Экспортировать) renders
+  every ticked moment into the project's <code>shorts</code> folder and adds them to the <b>Library</b> (Библиотека).
+  If a similar short was already exported, CutCut asks whether to replace it, keep both or skip it.</p>
+
+<h2 id="connect">6. Connect TikTok and YouTube</h2>
+<p>Open <b>Library → Accounts</b> (Аккаунты).</p>
+<ul>
+  <li><b>TikTok</b>: press <b>Add account</b> (Добавить аккаунт). Your browser opens TikTok's login page; sign in and allow
+    access. The account appears in the list with its name and avatar.</li>
+  <li><b>YouTube</b>: press <b>Add channel</b> (Добавить канал), sign in with Google and choose the channel.</li>
+</ul>
+<p>Tokens are stored only on your computer, encrypted for your Windows user.</p>
+
+<h2 id="publish">7. Publish</h2>
+<figure class="shot">
+  <img src="img/publish.webp" alt="Publish window with TikTok settings" width="1120" height="536" loading="lazy">
+</figure>
+<p>In the Library select one or more shorts and press <b>Publish</b> (Опубликовать).</p>
+<ol>
+  <li><b>Where</b> (Куда): tick the accounts. <b>When</b> (Когда): now, or at a time — several shorts can be spread out,
+    and CutCut suggests the hours when your videos do best.</li>
+  <li>Edit the title, description and hashtags. <b>Suggest text</b> (Предложить текст) drafts them for you; the cover is
+    changed by clicking it.</li>
+  <li><b>Platforms</b> (Площадки) → TikTok: <b>Post now</b> (Сразу) or <b>Draft</b> (Черновик).
+    For a direct post choose who can view the video, allow or turn off comments, duets and stitches, and mark
+    commercial content if the video promotes you or a partner.</li>
+  <li>Press <b>Publish</b>. By publishing you agree to TikTok's Music Usage Confirmation, shown above the button.</li>
+</ol>
+<p>The upload runs in the bottom bar with its progress. A draft goes to your TikTok inbox, and the caption is copied to
+  the clipboard so you can paste it in the TikTok app.</p>
+
+<h2 id="stats">8. Statistics</h2>
+<p><b>Library → Statistics</b> (Статистика) shows views, likes, comments and shares of the shorts you published, a chart by day,
+  the hours when your videos do best and, for YouTube, where viewers leave. CutCut updates the numbers regularly while it
+  is running.</p>
+
+<h2 id="disconnect">9. Disconnect an account</h2>
+<p>In <b>Library → Accounts</b> press <b>Remove</b> (Удалить) next to the account: its tokens are deleted from your computer.
+  To revoke CutCut's access completely, also remove it in TikTok under Settings and privacy → Security → Manage app
+  permissions, or at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a> for Google.</p>
+
+<footer>
+  <p><a href="./">CutCut</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> ·
+    <a href="https://github.com/H0oxy/cutcut/issues">Support</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -3,46 +3,170 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CutCut</title>
+<title>CutCut — Twitch streams into vertical shorts</title>
+<meta name="description" content="CutCut is a Windows desktop app that finds the best moments of a Twitch stream and turns them into vertical shorts with karaoke subtitles, ready to publish to TikTok and YouTube.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<nav><a href="./">CutCut</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+<nav>
+  <a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28">CutCut</a>
+  <a href="#features">Features</a><a href="#tiktok">TikTok</a><a href="guide.html">Guide</a><a href="#download">Download</a>
+</nav>
 
-<h1>CutCut</h1>
-<p class="lead">A Windows desktop app that turns long Twitch streams into vertical short videos with karaoke subtitles.</p>
+<header class="hero">
+  <img class="hero-icon" src="icon.png" alt="CutCut icon" width="88" height="88">
+  <h1>CutCut</h1>
+  <p class="lead">A Windows desktop app that finds the best moments of a long Twitch stream and turns them into vertical
+    shorts with word-by-word subtitles — then publishes them to your TikTok and YouTube accounts.</p>
+  <p class="actions"><a class="btn primary" href="#download">Download for Windows</a><a class="btn" href="guide.html">Read the guide</a></p>
+</header>
 
-<h2>What it does</h2>
+<figure class="shot">
+  <img src="img/editor.webp" alt="CutCut editor: list of found moments on the left, the 9:16 short in the middle, settings on the right and the timeline below" width="1440" height="900">
+  <figcaption>The editor: moments found in the stream on the left, the short as it will look on a phone in the middle,
+    its settings on the right and the timeline below.</figcaption>
+</figure>
+
+<h2 id="features">Features</h2>
+<div class="grid">
+  <section>
+    <h3>From a link to moments</h3>
+    <p>Paste a link to a Twitch recording or channel, or drop a video file. Recordings download in parts, and the analysis
+      starts before the download finishes. Live streams of channels you follow can be recorded automatically.</p>
+  </section>
+  <section>
+    <h3>Moment search on your computer</h3>
+    <p>Speech recognition, on-screen analysis, loudness, laughter and shouts, chat spikes and viewer clips point to the
+      interesting parts; a local language model picks and ranks them. Video never leaves your computer.</p>
+  </section>
+  <section>
+    <h3>Vertical 9:16 layout</h3>
+    <p>CutCut finds the webcam and the game on screen and stacks them for a phone screen. Layout templates, rounded or
+      circular webcam, blurred background, per-channel presets.</p>
+  </section>
+  <section>
+    <h3>Karaoke subtitles</h3>
+    <p>Word-by-word subtitles from an accurate transcription of each clip, with styles, highlight colors, speaker
+      detection and manual editing right on the timeline.</p>
+  </section>
+  <section>
+    <h3>Timeline editor</h3>
+    <p>Split, trim and speed up pieces, remove pauses in one click, add text, images, video and music with automatic
+      ducking under speech, animate layers with keyframes.</p>
+  </section>
+  <section>
+    <h3>Library and statistics</h3>
+    <p>Every exported short in one library with covers and notes. Views, likes and comments over time, retention of
+      YouTube shorts and the hours when your videos do best.</p>
+  </section>
+</div>
+
+<h2>Screens</h2>
+<figure class="shot">
+  <img src="img/home.webp" alt="Projects screen: a new project from a Twitch link or a file, recent projects and the latest shorts" width="1440" height="900" loading="lazy">
+  <figcaption>Projects: start from a Twitch link or a file; recent streams with the number of moments and shorts.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="img/library.webp" alt="Library: a grid of exported shorts with covers, views and duration" width="1440" height="900" loading="lazy">
+  <figcaption>Library: every exported short with its cover, views and duration, filters by streamer and recording.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="img/stats.webp" alt="Statistics: views, likes, comments, engagement, best hours to post and a views chart" width="1440" height="900" loading="lazy">
+  <figcaption>Statistics of published shorts: totals, the views chart, the best hours to post and every publication in a table.</figcaption>
+</figure>
+
+<h2 id="tiktok">Publishing to TikTok</h2>
+<figure class="shot">
+  <img src="img/publish.webp" alt="Publish window with TikTok settings: post now or draft, who can view, comments, duets, stitches, commercial content" width="1120" height="536" loading="lazy">
+  <figcaption>The publish window with TikTok settings: post now or send a draft, who can view the video, comments, duets
+    and stitches, commercial content.</figcaption>
+</figure>
+<p>You connect your TikTok account in <b>Library → Accounts</b>: CutCut opens TikTok's own login page in your browser,
+  so it never sees your password. Then, for each short you choose to publish:</p>
+<ol>
+  <li>You edit the title, description and hashtags, and pick the cover.</li>
+  <li>You choose <b>Post now</b> or <b>Draft</b>. A draft goes to your TikTok inbox, and you finish it in the TikTok app.</li>
+  <li>For a direct post, CutCut shows which account it posts as and asks who can view the video. The options come
+    from your account's settings, and none is preselected.</li>
+  <li>You allow or turn off comments, duets and stitches. What your account has disabled stays disabled.</li>
+  <li>If the video promotes you or a partner, you mark it as commercial content: <i>Your brand</i> or <i>Branded content</i>.</li>
+  <li>You see the consent to TikTok's Music Usage Confirmation (and Branded Content Policy for branded content)
+    and press <b>Publish</b>. Nothing is posted without this click.</li>
+  <li>CutCut uploads the video, shows the progress and the status, and later adds the video's views, likes, comments
+    and shares to the statistics.</li>
+</ol>
+<p>What CutCut does with each permission:</p>
 <ul>
-  <li>Downloads a Twitch stream recording or opens a video file from your computer.</li>
-  <li>Finds interesting moments using speech recognition, on-screen analysis, loudness and chat activity.
-      All analysis runs locally on your computer.</li>
-  <li>Renders 9:16 shorts with the webcam and gameplay framed for mobile, plus word-by-word subtitles.</li>
-  <li>Lets you publish finished shorts to your own TikTok and YouTube accounts and track their views.</li>
+  <li><code>user.info.basic</code>: shows your display name and avatar in the list of connected accounts;</li>
+  <li><code>video.upload</code>: sends a short you chose to your TikTok inbox as a draft;</li>
+  <li><code>video.publish</code>: posts a short you chose with the caption and settings you picked;</li>
+  <li><code>video.list</code>: reads your videos' view, like, comment and share counts for the statistics of shorts
+    published from CutCut.</li>
 </ul>
+<p>Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
 
-<h2>How CutCut uses TikTok</h2>
-<p>You sign in with TikTok through TikTok's own login page; CutCut never sees your password. After you sign in, CutCut can:</p>
-<ul>
-  <li>show your display name, username and avatar in the list of connected accounts (<code>user.info.basic</code>);</li>
-  <li>upload a short you chose and send it to your TikTok inbox as a draft or post it with the caption and privacy
-      setting you picked (<code>video.upload</code>, <code>video.publish</code>);</li>
-  <li>read the list of your videos and their view, like, comment and share counts to show statistics for shorts
-      published from CutCut (<code>video.list</code>).</li>
-</ul>
-<p>CutCut never posts anything without your explicit action in the app.</p>
+<details class="legend">
+  <summary>The interface is in Russian — what the labels mean</summary>
+  <table>
+    <tr><td>Публикация</td><td>Publish</td></tr>
+    <tr><td>Куда · Когда · Площадки</td><td>Where · When · Platforms</td></tr>
+    <tr><td>Сразу · Черновик</td><td>Post now · Draft (to TikTok inbox)</td></tr>
+    <tr><td>От имени</td><td>Posting as</td></tr>
+    <tr><td>Все · Друзья — взаимные подписки · Подписчики · Только я</td><td>Everyone · Friends · Followers · Only me</td></tr>
+    <tr><td>Комментарии · Дуэты · Стежки</td><td>Comments · Duets · Stitches</td></tr>
+    <tr><td>Коммерческий контент · Мой бренд · Реклама партнёра</td><td>Commercial content · Your brand · Branded content</td></tr>
+    <tr><td>Обложка первым кадром</td><td>Cover as the first frame</td></tr>
+    <tr><td>Опубликовать</td><td>Publish</td></tr>
+    <tr><td>Аккаунты · Добавить аккаунт · Удалить</td><td>Accounts · Add account · Remove</td></tr>
+  </table>
+</details>
 
-<h2>How CutCut uses YouTube</h2>
-<p>You sign in with Google and choose a YouTube channel. CutCut uploads the shorts you publish to that channel and reads
-their statistics. It uses the YouTube API Services; see the <a href="privacy.html">Privacy Policy</a> for details.</p>
+<h2>Publishing to YouTube</h2>
+<p>Connect a channel with your Google account and publish shorts right away or at a set time: YouTube keeps a scheduled
+  video private until then. CutCut reads the statistics of the videos it published, and retention if you allow YouTube Analytics.</p>
 
-<h2>Availability</h2>
-<p>CutCut is an independent project in private testing. It is not affiliated with or endorsed by TikTok, Google, YouTube or Twitch.</p>
+<h2 id="download">Download</h2>
+<div class="grid">
+  <section>
+    <h3>CutCut 0.1.3 for Windows</h3>
+    <p>The installer sets up everything CutCut needs: Python, ffmpeg, the local model runtime and the speech and vision
+      models. It downloads about 20 GB during installation.</p>
+    <p class="actions"><a class="btn primary" href="https://github.com/H0oxy/cutcut/releases/latest">Download the installer</a></p>
+  </section>
+  <section>
+    <h3>System requirements</h3>
+    <ul>
+      <li>Windows 10 or 11, 64-bit.</li>
+      <li>NVIDIA graphics card with 6 GB of video memory or more; 16 GB is recommended.</li>
+      <li>About 25 GB of disk space for the app and models, plus 10–16 GB for each 4-hour stream.</li>
+      <li>Internet connection for the installation, downloads and publishing.</li>
+    </ul>
+  </section>
+</div>
+
+<h2>Questions</h2>
+<dl class="faq">
+  <dt>Is CutCut free?</dt>
+  <dd>Yes. CutCut is free and runs entirely on your computer.</dd>
+  <dt>Are my streams or videos uploaded anywhere?</dt>
+  <dd>Only the shorts you publish, and only to the account you choose. Analysis runs locally; CutCut has no servers.</dd>
+  <dt>Can CutCut post without me?</dt>
+  <dd>No. Every publication starts with your click in the publish window. A TikTok post scheduled for later is published
+    by CutCut at that time, so the app has to be running.</dd>
+  <dt>What languages does it support?</dt>
+  <dd>The interface is in Russian. Moment search and subtitles are tuned for Russian-language streams.</dd>
+  <dt>How do I disconnect my TikTok account?</dt>
+  <dd>In <b>Library → Accounts</b> press <b>Remove</b> next to the account: its tokens are deleted from your computer. You can
+    also revoke access in TikTok under Settings and privacy → Security → Manage app permissions.</dd>
+</dl>
 
 <footer>
-  Questions: <a href="https://github.com/H0oxy/cutcut/issues">open an issue on GitHub</a> ·
-  <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a>
+  <p>CutCut is an independent project, not affiliated with or endorsed by TikTok, Google, YouTube or Twitch.</p>
+  <p><a href="guide.html">Guide</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> ·
+    <a href="https://github.com/H0oxy/cutcut/issues">Support</a></p>
 </footer>
 </main>
 </body>
