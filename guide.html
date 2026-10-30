@@ -33,24 +33,30 @@
 </ol>
 
 <h2 id="install">1. Install</h2>
-<p>Download the installer from the <a href="./#get">Get CutCut</a> section and run it. It installs CutCut without
-  administrator rights (only the Visual C++ Runtime asks for permission if it is missing), then sets up Python, ffmpeg,
-  the local model runtime and the models in a console window. If the download is interrupted, run
-  <b>CutCut — проверить и докачать</b> (check and download) from the Start menu: it downloads only what is missing.</p>
-<p>Choose an installation folder on a drive with plenty of space: projects with streams are kept next to the app.</p>
+<p>Download the installer from the <a href="./#get">Get CutCut</a> section and run it. The installer is not signed yet,
+  so Windows may warn about it: press <b>More info → Run anyway</b>. It installs CutCut without administrator rights, then
+  downloads ffmpeg, the local model runtime and the models (about 22 GB) in a console window. If the download is
+  interrupted, run <b>CutCut — проверить и докачать</b> (check and download) from the Start menu: it downloads only what
+  is missing.</p>
+<p>Choose an installation folder on a drive with plenty of space: projects with streams and finished shorts are kept
+  next to the app.</p>
 
 <h2 id="project">2. Start a project</h2>
 <p>On the <b>Projects</b> (Проекты) screen, paste a link to a Twitch recording or channel and press <b>Start</b> (Начать),
   or drop an mp4, ts or mkv file onto the window. A recording downloads in parts, and each part is analyzed as soon as it
   arrives. A channel link records the live stream.</p>
-<p>The status bar shows the progress and how long the analysis has left. When it finishes, the project opens by itself.</p>
+<p>The task card in the bottom-right corner shows the progress and how long the analysis has left. When it finishes,
+  the project opens by itself.</p>
 
 <h2 id="moments">3. Review the moments</h2>
 <p>The list on the left shows the moments CutCut found, with a score from 1 to 10, the length and the topic. The strip at
   the top is a map of the whole stream: chat activity, loudness and where the moments are.</p>
 <ul>
-  <li>Tick the moments you want as shorts. <b>Mark from</b> (Отмечать от) ticks every moment above a score.</li>
-  <li>Star your favourites; sort by <b>Time</b> (Время) or <b>Score</b> (Оценка); search by title and hashtag.</li>
+  <li>Tick the moments you want as shorts. The tick button next to <b>Export</b> (Экспортировать) shows how many are ticked;
+    its menu has <b>Mark from</b> (Отмечать от), which ticks every moment above a score, and <b>Uncheck all</b> (Снять все).</li>
+  <li>Star your favourites; sort by time or by score with the clock and flame icons above the list.</li>
+  <li><b>Search</b> (the magnifier or Ctrl+F) looks through titles, hashtags and everything said on the stream. Click a place
+    in the speech to jump there; <b>Add</b> (Добавить) makes a moment around it, <b>Open</b> (Открыть) goes to the moment it is in.</li>
   <li>Drag a moment onto its neighbour to merge them, or add your own with <b>Add moment</b> (Добавить момент).</li>
 </ul>
 
@@ -61,17 +67,21 @@
 <h2 id="edit">4. Edit a short</h2>
 <p>The middle of the screen shows the short exactly as it will look on a phone; the timeline below shows the short's time.</p>
 <ul>
-  <li><b>Frame</b> (Кадр): pick a layout — webcam on top, webcam in the corner, game only and others.
-    <b>Find webcam and game</b> (Найти вебку и игру) detects them on screen.</li>
+  <li><b>Frame</b> (Кадр): pick a layout — webcam on top, webcam in the corner, screen only and others.
+    <b>Find webcam and screen</b> (Найти вебку и экран) detects them on screen.</li>
   <li><b>Subtitles</b>: choose a style and position; select a line to fix its words.</li>
   <li><b>Timeline</b>: split with the blade, drag the edges to trim, change the speed of a piece,
     <b>Remove pauses</b> (Убрать паузы) cuts the silence.</li>
-  <li><b>Add</b> (Добавить): text, an image, a video, a piece of the stream or music. Music gets quieter under speech by itself.</li>
+  <li><b>Add</b> (Добавить): text, an image, a video, a piece of the stream, music or a <b>Blur</b> (Размытие) over
+    something to hide. Music gets quieter under speech by itself.</li>
+  <li>Right-click a layer in the frame or on the timeline: shape, soft edges and shadow, how it appears and disappears,
+    alignment to the frame. Exact values are in the panel on the right.</li>
 </ul>
 
 <h2 id="export">5. Preview and export</h2>
 <p><b>Preview</b> (Предпросмотр) renders the short in full quality in a phone frame. <b>Export</b> (Экспортировать) renders
-  every ticked moment into the project's <code>shorts</code> folder and adds them to the <b>Library</b> (Библиотека).
+  every ticked moment into the <code>shorts</code> folder next to the app (another folder can be chosen in
+  <b>Settings → Shorts</b> (Настройки → Шортсы)) and adds them to the <b>Library</b> (Библиотека).
   If a similar short was already exported, CutCut asks whether to replace it, keep both or skip it.</p>
 
 <h2 id="connect">6. Connect TikTok and YouTube</h2>
@@ -98,7 +108,7 @@
     commercial content if the video promotes you or a partner.</li>
   <li>Press <b>Publish</b>. By publishing you agree to TikTok's Music Usage Confirmation, shown above the button.</li>
 </ol>
-<p>The upload runs in the bottom bar with its progress. A draft goes to your TikTok inbox, and the caption is copied to
+<p>The upload runs in the task card in the bottom-right corner with its progress. A draft goes to your TikTok inbox, and the caption is copied to
   the clipboard so you can paste it in the TikTok app.</p>
 
 <h2 id="stats">8. Statistics</h2>
